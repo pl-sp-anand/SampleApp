@@ -9,7 +9,7 @@ phases:
       - echo $CODEBUILD_RESOLVED_SOURCE_VERSION
       - echo $REPOSITORY_URI
       - aws --version
-      - REPOSITORY_URI=public.ecr.aws/o0c9p3z6/ecr-1
+      - REPOSITORY_URI=083867811154.dkr.ecr.us-east-1.amazonaws.com/ecr-2
       - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $REPOSITORY_URI
 
       # - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
